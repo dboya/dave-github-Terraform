@@ -3,7 +3,7 @@ my notes on terraform lessons
 
 
 Note:
-to get the following information andbe able to test or learn them, just create a newnrepository and the first thing that will open will be the following notes.
+to get the following information and be able to test or learn them, just create a newnrepository and the first thing that will open will be the following notes.
 
 Quick setup — if you’ve done this kind of thing before
 or	
