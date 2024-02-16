@@ -1,0 +1,29 @@
+Note that using terraform, we always require a "Provider" and and a "terraform user"( through user's acces_key and secret_key). However, saving these acces_key and secret_key in the configuration file is a MALpractice. a very terrible thing to do since it can lead to a security breach.
+
+provider "aws" {
+region = "us-east-1"
+access_key = "AKIAW7MRKFNNL2UPOUHV"
+secret_key = "CUDgPXv0MxcKk7SSFuybY6VqHg4ZL2LaWQaEpLvV"
+}
+
+Best practice requires:
+You save these keys in "Amazon CLI" within your local machine used in running the terraform commands. the steps are as follows:
+
+    - Download Amazon CLI and install on your local machine.
+    - run "aws configure" to set in the credentials. if no cedential has ever been set, then it will just open for you to set the new ones. However, if some credentials had been set previously, you will be asked if you wish to maintain or change them.
+
+Note:
+The credentials are gotten first by creating a "User". This user can either be given just a programatic access ( where the user have access to your aws resources theough CLI, SDK, etc but do not have any acces to your console. Here you only create a user and provides access_key and secret_key to the user) or an aws management console access ( where user has both keys as well as access to your console)
+
+running aws configure you have the following output:
+
+$ aws configure
+AWS Access Key ID [****************OUHV]: AKIAW7MRKFNNL2UPOUHV
+AWS Secret Access Key [****************pLvV]: CUDgPXv0MxcKk7SSFuybY6VqHg4ZL2LaWQaEpLvV
+Default region name [us-east-1]:
+Default output format [json]:
+
+You fit in the information of every line and press enter. where you have no information to add just press enter and it will take you to the next till you are done. if everything is properly done, then it will take you back to your command line where you can proceed to running your codes.
+
+Note:
+that both kyes are same as the ones previously available. in this case you needed not adding the kyes again. you just had to press enter and that will be it. you only put the keys if you are changing what is already there. the above display is just for the purpose of explanation.

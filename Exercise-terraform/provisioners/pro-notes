@@ -1,0 +1,2 @@
+Provisioner:
+    provisioners are used in terraform to run or execute scripts on LOCAL or REMOTE hosts(machines)as part of resource creation or destruction. 

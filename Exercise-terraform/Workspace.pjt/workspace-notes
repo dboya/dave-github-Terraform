@@ -1,0 +1,32 @@
+Actually a work space is an isolated working environment within a resource which enables someone to do his private work. within terraform, workspaces could be created using the folllwing commands:
+- "terraform workspace -h" = will show you all the available options applicable to workspace such as delete, create, show, etc....
+
+syntax and its display is as follows:
+
+$ terraform workspace -h
+Usage: terraform [global options] workspace
+
+  new, list, show, select and delete Terraform workspaces.
+
+Subcommands:
+    delete    Delete a workspace
+    list      List Workspaces
+    new       Create a new workspace
+    select    Select a workspace
+    show      Show the name of the current workspace
+
+The following thus shows how the various subcommands are used (or called):
+
+- CREAT: 
+  "terraform workspace new 'workspace name' " Forexample: "terraform workspace new dev". this will create a new workspace called "dev"
+
+- SELECT:
+  "terraform workspace select 'workspace name' " . this will chose a particular workspace within which you can carryout your work. this command is only useful if you have multile workspaces to work in. Forexample: "terraform workspace select production" will now open but the production workspace for you to start working in.
+
+
+- LIST:
+  "terraform workspace list" . this command will lists all the workspaces you have (or have created) and the current workspace within which you are working in will be marked by an asterix:
+
+
+- SHOW:
+  "terraform workspace show ". this command will show the current or active workspace within which you are working in:
