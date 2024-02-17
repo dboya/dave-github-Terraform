@@ -1,8 +1,6 @@
 
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAW7MRKFNNL2UPOUHV"
-  secret_key = "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"
 }
 
 # Create a new load balancer
