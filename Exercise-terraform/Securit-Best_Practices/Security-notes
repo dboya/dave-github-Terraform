@@ -2,8 +2,8 @@ Note that using terraform, we always require a "Provider" and and a "terraform u
 
 provider "aws" {
 region = "us-east-1"
-access_key = "AKIAWUH"
-secret_key = "CUD6VqHg4ZL2LaWQaEpL"
+access_key = "KIAWUH"
+secret_key = "D6VqHg4ZL2LaWQaEpL"
 }
 
 Best practice requires:
