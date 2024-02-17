@@ -2,8 +2,8 @@ Note that using terraform, we always require a "Provider" and and a "terraform u
 
 provider "aws" {
 region = "us-east-1"
-access_key = "AKIAW7MRKFNNL2UPOUHV"
-secret_key = "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"
+access_key = "AKIAWUH"
+secret_key = "CUD6VqHg4ZL2LaWQaEpL"
 }
 
 Best practice requires:
@@ -18,8 +18,8 @@ The credentials are gotten first by creating a "User". This user can either be g
 running aws configure you have the following output:
 
 $ aws configure
-AWS Access Key ID [****************OUHV]: AKIAW7MRKFNNL2UPOUHV
-AWS Secret Access Key [****************pLvV]: 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
+AWS Access Key ID [****************OUHV]: MRKNL2UPOU
+AWS Secret Access Key [****************pLvV]: PXv0MxcKk7SSFuqHg4ZL2LaWQ
 Default region name [us-east-1]:
 Default output format [json]:
 
